@@ -78,3 +78,28 @@ cryptographic hashing rather than manual tracking.
 
 All Git data is stored inside:
 .git/objects/
+
+
+After creating the first commit, I observed directories named using the first
+two characters of object hashes, with files named using the remaining characters.
+
+Using this structure, Git stores:
+- file contents as blobs
+- directory structures as trees
+- repository snapshots as commits
+
+All of these are stored using the same object mechanism.
+
+---
+
+## 6. What clicked for me
+
+By exploring `.git/` directly, I realized that Git is internally very simple.
+
+It is built from:
+- small text files
+- pointer-based references
+- hashed content
+
+This understanding forms the foundation for implementing Git behavior from
+scratch in the next steps of this project.
