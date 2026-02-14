@@ -93,3 +93,7 @@ python src/write_tree.py
 Then inspected the tree using native Git:
 git cat-file -p <tree_hash>
 
+Git successfully printed the directory structure,
+confirming that the tree object was correctly constructed.
+
+---
