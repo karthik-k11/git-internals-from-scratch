@@ -97,3 +97,15 @@ Git successfully printed the directory structure,
 confirming that the tree object was correctly constructed.
 
 ---
+## 7. Key Takeaway
+
+Tree objects form the bridge between file content and commits.
+
+They allow Git to:
+
+- Represent directory structure
+- Track file names and modes
+- Create complete project snapshots
+
+At this stage, I have implemented both blob and tree object handling,
+which forms the core of Git’s object storage system.
